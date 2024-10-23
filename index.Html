@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBXLUAU</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0d0f12, #1a1c20);
+            color: #ffffff;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding-left: 50px;
+            text-align: left;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        .shine {
+            background: linear-gradient(135deg, #00ff99, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 5px rgba(0, 255, 153, 0.8), 0 0 10px rgba(0, 255, 153, 0.6);
+        }
+        button {
+            background: #00ff99; /* Original button color */
+            color: #000000;
+            border: none;
+            border-radius: 50px;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 5px 0 #007445, 0 10px 20px rgba(0, 204, 122, 0.5); /* Adjusted box shadow */
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+        button:hover {
+            background: #00cc7a;
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px rgba(0, 204, 122, 0.7); /* Stronger shadow on hover */
+        }
+        button:active {
+            box-shadow: none; /* Remove shadow on active */
+            transform: translateY(5px); /* Move down when pressed */
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .description {
+            margin-top: 25px;
+            color: #00ff99;
+            text-shadow: 0 0 5px rgba(0, 255, 153, 0.8), 0 0 10px rgba(0, 255, 153, 0.6);
+            font-size: 16px;
+            max-width: 400px;
+            line-height: 1.5;
+        }
+    </style>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page; // Use the passed page URL
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1><span class="shine">RBXLUAU</span>  I Get The Best Exploits</h1>
+        <button onclick="navigateTo('yay.html')">Login / Sign Up</button>
+        <div class="description">RBXLUAU is the top recommended site for downloading safe executors. You can look for the best results and you'll also own custom hand-made scripts, along with a Linktaverse bypass bot.</div>
+    </div>
+</body>
+</html>
